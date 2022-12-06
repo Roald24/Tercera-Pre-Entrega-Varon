@@ -1,8 +1,16 @@
-.contenedor h2 {
-  color: white;
-}
-
 .contenedor {
   width: 200px;
   background-color: aqua;
+}
+.contenedor p {
+  color: brown;
+}
+.contenedor p:nth-of-type(2) {
+  color: black;
+}
+.contenedor h2 {
+  color: darkred;
+}
+.contenedor:hover p {
+  color: chartreuse;
 }
