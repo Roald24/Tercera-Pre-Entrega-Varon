@@ -1,0 +1,20 @@
+.card{
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+
+    p{
+        color: brown;
+        &:nth-of-type(2){
+            color: black;
+        }
+    }
+
+    h2{
+        color: darkred;
+    }
+
+    &:hover p{
+        color: chartreuse;
+    }
+
+}

@@ -1,22 +1,9 @@
-.contenedor{
-    width: 200px;
-    background-color: aqua;
-
-    p{
-        color: brown;
-        &:nth-of-type(2){
-            color: black;
-        }
-    }
-
-    h2{
-        color: darkred;
-    }
-
-    &:hover p{
-        color: chartreuse;
-    }
-
+*{
+    margin: 0px;
+    padding: 0px;
 }
+
+
+@import "card";
 
 
