@@ -1,15 +1,19 @@
-.fa-bars{
-    color: black;
-    font-size: 24px;
-    padding: 15px;
-    visibility: hidden;
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+
+@mixin mobile {
+    @media screen and (max-width: 280px) {
+        @content;
+    }
 }
 
 
 
-
-
-
+/*
 @media(max-width:600px){
     nav ul{
         position: fixed;
@@ -32,7 +36,7 @@
     }
 
     header{
-        width: auto;
+        width: 100vw;
     }
 
 
@@ -49,4 +53,5 @@
 
 nav ul:hover{
     left: 0;
-}
+}*/
+

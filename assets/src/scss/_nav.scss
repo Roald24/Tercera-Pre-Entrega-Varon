@@ -1,27 +1,69 @@
-.nav{
+@import "media";
+
+%aling-center{
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar{
+    background: yellowgreen;
+    height: 80px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    top: 0%;
+    padding:0.5rem calc((100vw - 1200px) /2);
+    z-index: 10;
+    position: relative;
 
-    ul, li{
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        align-items: center;
-        list-style-type: none;
+    &_logo{
+        color: red;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+        margin-left: 24px;
+        @extend %aling-center
+    }
 
-        a{
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-            padding: 10px 20px;  
-            &:hover{
-                font-weight: bold;
-                transition: 0.5ms;
-                text-decoration: underline;
-            }
+    &_bars{
+        opacity: 0;
+
+        @include tablet{
+            color: black;
+            opacity: 1;
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            font-size: 2rem;
+        }
+        @include mobile{};
+    }
+
+    &_menu{
+        @extend %aling-center;
+        list-style: none;
+        text-align: center;
+        margin-right: 24px;
+
+
+        @include tablet{
+            display: none;
         }
     }
+
+    &_links{
+        color: red;
+        @extend %aling-center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+
+        &:hover{
+            color: rgb(62, 248, 208);
+            transition: all 0.3s ease;
+        }
+    }
+
+
 
 }
 
