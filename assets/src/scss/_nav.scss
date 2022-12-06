@@ -1,0 +1,30 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0%;
+
+    ul, li{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        list-style-type: none;
+
+        a{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px 20px;  
+            &:hover{
+                font-weight: bold;
+                transition: 0.5ms;
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+
+
+

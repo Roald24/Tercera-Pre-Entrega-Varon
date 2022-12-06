@@ -1,9 +1,11 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-
+@import"reset";
+@import "fonts";
 @import "card";
+@import "nav";
+@import"mobile";
+@import "items";
+@import "oferta";
+@import"btn";
+@import"body";
 
 

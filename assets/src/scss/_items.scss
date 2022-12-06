@@ -1,0 +1,158 @@
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item1 img{
+    width: 100px;
+}
+
+.item1 img:hover{
+    width: 100px;
+    transform: rotateX(360deg);
+    transition: 2s;
+}
+
+.item2 img{
+    width: 100px;
+}
+
+
+
+.item2 img:hover{
+    width: 100px;
+    transform: rotateX(360deg);
+    transition: 2s;
+}
+
+
+.btn{
+    margin: 20px;
+    background-color: rgb(84, 209, 0);
+}
+
+
+.item3 img{
+    width: 100px;
+}
+
+.item3 img:hover{
+    width: 100px;
+    transform: rotateX(360deg);
+    transition: 2s;
+}
+
+
+.item4 img{
+    width: 100px;
+}
+
+.item4 img:hover{
+    width: 100px;
+    transform: rotateX(360deg);
+    transition: 2s;
+}
+
+.item5 img{
+    width: 100px;
+}
+
+.item5 img:hover{
+    width: 100px;
+    transform: rotateX(360deg);
+    transition: 2s;
+}
+
+.item6 img{
+    width: 100px;
+}
+
+.item6 img:hover{
+    width: 100px;
+    transform: rotateX(360deg);
+    transition: 2s;
+}
+
+.item1 p, .item1 h3{
+    padding: 10px;
+}
+
+.item2 p, .item1 h3{
+    padding: 10px;
+}
+
+.item3 p, .item1 h3{
+    padding: 10px;
+}
+
+.item4 p, .item1 h3{
+    padding: 10px;
+}
+
+.item5 p, .item1 h3{
+    padding: 10px;
+}
+
+.item6 p, .item1 h3{
+    padding: 10px;
+}
+
+
+.item1{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid;
+    transition: 3s;
+    margin: 50px;
+}
+
+
+
+.item2{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid;
+    margin: 50px;
+}
+
+.item3{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid;
+    margin: 50px;
+}
+
+.item4{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid;
+    margin: 50px;
+}
+
+.item5{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid;
+    margin: 50px;
+}
+
+.item6{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid;
+    margin: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
