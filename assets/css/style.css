@@ -7,20 +7,24 @@
 
 .card {
   width: 200px;
-  background-color: rgb(0, 0, 0);
   margin: 20px;
+  background-color: rgb(93, 193, 185);
+  border: none;
 }
 .card p {
-  color: brown;
+  color: black;
 }
 .card p:nth-of-type(2) {
-  color: rgb(8, 68, 138);
+  color: black;
 }
 .card h2 {
-  color: darkred;
+  color: black;
 }
 .card:hover p {
   color: chartreuse;
+}
+.card:hover h2 {
+  color: rgb(209, 36, 36);
 }
 
 /*
@@ -186,11 +190,6 @@ nav ul:hover{
   transition: 2s;
 }
 
-.btn {
-  margin: 20px;
-  background-color: rgb(84, 209, 0);
-}
-
 .item3 img {
   width: 100px;
 }
@@ -316,19 +315,22 @@ nav ul:hover{
   margin: 20px;
   background-color: rgb(84, 209, 0);
 }
+.btn:hover {
+  background-color: violet;
+}
 
 body {
   background-color: rgb(93, 193, 185);
 }
 
-table {
+#tabla {
   border: solid 1px;
   border-collapse: collapse;
   margin: 30px;
-  width: 1px;
   padding: 10px;
+  width: 500px;
 }
-table th, table td {
+#tabla th, #tabla td {
   border: solid 1px;
   padding: 5px;
 }
@@ -425,7 +427,7 @@ table th, table td {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: black;
+  background-color: rgb(21, 255, 0);
   transition: all 0.3s;
   border-radius: 4px;
 }
@@ -437,4 +439,81 @@ table th, table td {
 }
 .text_container-img {
   height: 100%;
+}
+
+.formulario {
+  font-family: "Quicksand", sans-serif;
+  background-color: rgba(34, 34, 34, 0.3);
+  width: 800px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 30px;
+  box-shadow: 0px 0px 20px 0px rgb(0, 255, 13);
+  color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 60px;
+  grid-template-areas: "zona1 zona1" "zona2 zona3" "zona4 zona5" "zona6 zona6" "zona7 zona7";
+}
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.formulario label input, .formulario label textarea {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(14, 134, 10);
+  color: black;
+  margin-top: 10px;
+}
+.formulario h2 {
+  grid-area: zona1;
+}
+.formulario button {
+  grid-area: zona7;
+  background-color: rgb(102, 255, 0);
+  border: none;
+  color: black;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.formulario label:nth-child(2) {
+  grid-area: zona2;
+}
+
+.formulario label:nth-child(3) {
+  grid-area: zona3;
+}
+
+.formulario label:nth-child(4) {
+  grid-area: zona4;
+}
+
+.formulario label:nth-child(5) {
+  grid-area: zona5;
+}
+
+.formulario label:nth-child(6) {
+  grid-area: zona6;
+}
+
+.info {
+  margin: 10px;
+  padding: 10px;
+}
+.info p {
+  padding: 10px;
+}
+
+.permiso {
+  margin: 10px;
+  padding: 10px;
+  width: 1200px;
+  height: auto;
+}
+.permiso p {
+  padding: 10px;
 }

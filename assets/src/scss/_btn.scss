@@ -1,6 +1,10 @@
 .btn {
     margin: 20px;
     background-color: rgb(84, 209, 0);
+
+    &:hover{
+      background-color: violet;
+    }
   }
 
   

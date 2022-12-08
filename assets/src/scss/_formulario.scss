@@ -1,0 +1,76 @@
+.formulario{
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgba(34, 34,34,0.3);
+    width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px 0px rgb(0, 255, 13);
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 60px;
+    grid-template-areas: "zona1 zona1"
+                         "zona2 zona3"
+                         "zona4 zona5"
+                         "zona6 zona6"
+                         "zona7 zona7";
+
+    label{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        input, textarea{
+            background-color: transparent;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid rgb(14, 134, 10);
+            color: black;
+            margin-top: 10px;
+        }
+
+
+
+        
+    }
+
+    h2{
+        grid-area: zona1;
+    }
+
+
+
+
+    button{
+        grid-area: zona7;
+        background-color:rgb(102, 255, 0) ;
+        border: none;
+        color: black;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+
+}
+
+
+
+
+
+
+.formulario label:nth-child(2){
+    grid-area: zona2;
+}
+.formulario label:nth-child(3){
+    grid-area: zona3;
+}
+.formulario label:nth-child(4){
+    grid-area: zona4;
+}
+.formulario label:nth-child(5){
+    grid-area: zona5;
+}
+.formulario label:nth-child(6){
+    grid-area: zona6;
+}
