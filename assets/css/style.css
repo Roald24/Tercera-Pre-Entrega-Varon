@@ -27,60 +27,24 @@
   color: rgb(209, 36, 36);
 }
 
-/*
-@media(max-width:600px){
-    nav ul{
-        position: fixed;
-        top: 0;
-        left: -350px;
-        flex-direction: column;
-        justify-content: start;
-        width: 250px;
-        height: 100vh;
-        transition:0.5s;
-        z-index: 100;
-
-    }
-    .card{
-        position: relative;
-    }
-
-    .display{
-        width: auto;
-    }
-
-    header{
-        width: 100vw;
-    }
-
-
-
-    .fa-bars{
-        visibility: visible;
-    }
-
-}
-
-.fa-bars:hover + ul{
-    left: 0;
-}
-
-nav ul:hover{
-    left: 0;
-}*/
 .navbar_links, .navbar_menu, .navbar_logo {
   display: flex;
   align-items: center;
 }
 
 .navbar {
-  background: yellowgreen;
+  background: rgb(33, 0, 79);
   height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1200px) / 2);
   z-index: 10;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .navbar .navbar {
+    max-width: max-content;
+  }
 }
 .navbar_logo {
   color: red;
@@ -123,47 +87,6 @@ nav ul:hover{
   transition: all 0.3s ease;
 }
 
-/*
-@media(max-width:600px){
-    nav ul{
-        position: fixed;
-        top: 0;
-        left: -350px;
-        flex-direction: column;
-        justify-content: start;
-        width: 250px;
-        height: 100vh;
-        transition:0.5s;
-        z-index: 100;
-
-    }
-    .card{
-        position: relative;
-    }
-
-    .display{
-        width: auto;
-    }
-
-    header{
-        width: 100vw;
-    }
-
-
-
-    .fa-bars{
-        visibility: visible;
-    }
-
-}
-
-.fa-bars:hover + ul{
-    left: 0;
-}
-
-nav ul:hover{
-    left: 0;
-}*/
 .items {
   display: flex;
   flex-direction: column;
@@ -297,7 +220,7 @@ nav ul:hover{
   margin: 50px;
 }
 
-.ofertas h1 {
+.ofertas h2 {
   animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: infinite;
@@ -320,10 +243,11 @@ nav ul:hover{
 }
 
 body {
-  background-color: rgb(93, 193, 185);
+  background-color: rgb(0, 0, 0);
 }
 
 #tabla {
+  align-self: center;
   border: solid 1px;
   border-collapse: collapse;
   margin: 30px;
